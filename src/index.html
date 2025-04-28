@@ -1,35 +1,69 @@
+
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-
-    <!-- Fontawesome is our recomended library for icons -->
     <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
     />
+    <style>
+      .card {
+        width: 200px;
+        height: 300px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5rem;
+        color: red;
+        margin: 10px;
+      }
+      .suit {
+        position: absolute;
+        font-size: 2rem;
+      }
+      .top-suit {
+        top: 10px;
+        left: 10px;
+      }
+      .bottom-suit {
+        bottom: 10px;
+        right: 10px;
+        transform: rotate(180deg);
+      }
+      .background {
+        background-color: green;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    
+    <title>Carta aleatorias</title>
   </head>
   <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
-    </div>
+  
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
-  </body>
-</html>
+    <div class="background">
+      <div class="card" id="card">
+    
+        <div class="suit top-suit">♥</div>
+        <div class="number" id="number">A</div>
+        <div class="suit bottom-suit">♥</div>
+      </div>
+      
+      </div>
+
+
+
+    <script src="/app.js"> </script>
+     </body>
+
+      </html>
